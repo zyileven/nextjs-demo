@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import hljs from 'highlight.js';
+import 'highlight.js/styles/dark.css';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="border-emerald-50 border-[1px]">
-        <div>layout1</div>
-        {children}
+          {children}
       </body>
     </html>
   );
